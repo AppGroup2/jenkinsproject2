@@ -1,5 +1,5 @@
 pipeline{
-	agent{
+	agent any{
 			stages{
 				stage ('1-Team5 Group2 check from Version Contol'){
 					steps{

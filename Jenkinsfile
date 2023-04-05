@@ -19,9 +19,37 @@ pipeline{
 							sh 'sudo systemctl status jenkins'
 							}
 						}
+					}
+				}
+				stage('3-Group Parallel job'){
+					parallel{
 						stage('Aubin'){
 							steps{
-								sh 'action'
+								sh 'ls'
+							}
+						}
+						stage('Afeez'){
+							steps{
+								sh 'pwd'
+							}
+						}
+					}
+				}
+				stage('4-Group Parallel job'){
+					parallel{
+						stage('Olu'){
+							steps{
+								sh 'lscpu'
+							}
+						}
+						stage('Tunde'){
+							steps{
+								sh 'pwd'
+							}
+						}
+						stage('Chris'){
+							steps{
+								sh 'whoami'
 							}
 						}
 					}

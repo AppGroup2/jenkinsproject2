@@ -3,6 +3,7 @@ pipeline{
 		stages{
 				stage ('1-clone'){
 					steps{
+						checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'groupgit', url: 'https://github.com/AppGroup2/jenkinsproject2.git']])
 
 						}	
 					}

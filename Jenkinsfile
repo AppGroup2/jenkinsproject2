@@ -1,27 +1,27 @@
 pipeline{
-	agent {
-		label 'slave1'
-			}			
+	agent any
 		stages{
-				stage ('1-Team5 Group2-from Version Contol'){
+				stage ('1-clone'){
 					steps{
-						echo " This is group two Parallel job pipeline"
+
 						}	
 					}
 				stage('2-Group Parallel job'){
 					parallel{
 						stage('Teeto-sub-job-1'){
-								agent {
-									label'slave2'
-								}
 							steps{
 								sh 'lscpu'
 								sh 'echo $SHELL'
 							}
 						}
-						stage('Teeto-sub-job-2'){
+						stage('Yomi'){
 							steps{
 							sh 'sudo systemctl status jenkins'
+							}
+						}
+						stage('Aubin'){
+							steps{
+								sh 'action'
 							}
 						}
 					}

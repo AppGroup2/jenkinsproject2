@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #script to check system OS statistics and jenkins status
 lscpu
 sleep 2

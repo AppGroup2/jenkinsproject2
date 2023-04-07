@@ -1,0 +1,14 @@
+Question 3
+
+One of the advantages of using a multi-branch pipeline is that it allows developers to build and deploy multiple branches from a single repository.
+The multi-branch pipeline also allows for different environments for different branches and keep track of changes occurring over time.
+
+Question 5
+
+It is important to use conditional check. Thus, we can use conditional check to block junior developers or engineers, 
+in order to refract the Jenkinsfile and the code so that a merge in the main branch is only possible if the pull request comes from the develop branch 
+after having been validated for the feature branch.
+
+Question 6
+
+Here we can use the conditional multibuild job and implement the "when" condition for the flow from feature-develop-main.

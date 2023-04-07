@@ -50,7 +50,7 @@ pipeline{
 						}
 						stage('Chris'){
 							steps{
-								sh 'whoami'
+								sh '/var/lib/jenkins/workspace/JenkinProject2-Parallel/christianbashscript.sh'
 							}
 						}
 					}

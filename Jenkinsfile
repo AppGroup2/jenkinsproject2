@@ -15,6 +15,11 @@ pipeline{
 								sh 'echo $SHELL'
 							}
 						}
+						stage('Chris'){
+							steps{
+								sh '/home/ubuntu/christianbashscript.sh'
+							}
+						}
 						stage('Yomi'){
 							steps{
 							sh '/home/ubuntu/yomiscript.sh'
@@ -48,11 +53,7 @@ pipeline{
 								sh 'pwd'
 							}
 						}
-						stage('Chris'){
-							steps{
-								sh '/home/ubuntu/christianbashscript.sh'
-							}
-						}
+						
 					}
 				}
 	

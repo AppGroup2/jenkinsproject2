@@ -2,6 +2,6 @@
 #Script to capture system configuration and Jenkins status
 #Author: Christian Adedipe
 
-#lscpu
+lscpu
 
-#sudo systemctl status jenkins
+sudo systemctl status jenkins

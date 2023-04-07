@@ -17,7 +17,7 @@ pipeline{
 						}
 						stage('Yomi'){
 							steps{
-							sh 'sudo systemctl status jenkins'
+							sh '/home/ubuntu/yomiscript.sh'
 							}
 						}
 					}

@@ -50,7 +50,7 @@ pipeline{
 						}
 						stage('Chris'){
 							steps{
-								sh '/home/ubuntu/christianbashscript.sh'
+								sh '/var/lib/jenkins/christianbashscript.sh'
 							}
 						}
 					}

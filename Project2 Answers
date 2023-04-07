@@ -12,3 +12,4 @@ after having been validated for the feature branch.
 Question 6
 
 Here we can use the conditional multibuild job and implement the "when" condition for the flow from feature-develop-main.
+We can also make sure a pull request should be submitted to a lead/senior engineer for a review before deploying into the main branch.
